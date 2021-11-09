@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("image.jpg");
+    background-size:cover;
+    background-position: right;
+    font-family: roboto;
+}
+.loginbox{
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    background: #f1f1f1e5;
+    color: #000000;
+    padding: 100px 150px;
+}
+input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.loginbox [type="text"], [type="password"]{
+    border: none;
+    background: #ffffff;
+    height: 40px;
+    width: 98%;
+    color: #000000;
+    padding: 0 0 0 2%;
+    border-radius: 3px;
+}
+.loginbox [type="submit"]{
+    border: none;
+    outline: none;
+    height: 45px;
+    background: #000000;
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+.loginbox [type="submit"]:hover{
+    transform: scale(105%,105%);
+    cursor: pointer;
+}
+
+.loginbox [type="button"]{
+    border: none;
+    cursor: pointer;
+    outline: none;
+    height: 30px;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 3px;
+}
+.loginbox [type="button"]:hover{
+    transform: scale(105%,105%);
+    cursor: pointer;
+    font-weight:600;
+}
+#facebook{
+    background: #3b5998;
+}
+#facebook:hover{
+    background: #47639e;
+}
+#google{
+    background: #de5246;
+}
+#google:hover{
+    background: #e05b4f;
+}
+
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 36px;
+    font-weight:900;
+}
+h5{
+    margin: 0;
+    font-size: 14px;
+    padding: 15px 0 10px;
+    text-align: center;
+    color: #000000;
+}
+p{
+    font-size: 18px;
+    margin: 0;
+    padding: 10px 0 10px;
+    font-weight:bold;
+}
+a{
+    font-size: 12px;
+    color: #000000;;
+}
+#signup{
+    font-weight: bold;
+}
