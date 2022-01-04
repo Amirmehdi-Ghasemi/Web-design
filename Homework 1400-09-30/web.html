@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html dir="rtl">
+    <head>
+    </head>
+    <body>
+        <h1> 8 queens in javasript</h1>
+        <script>
+            
+            var size = 8;
+            calculate();
+
+            function print(board){
+                for(var i=0; i<size; i++){
+                    for(var j=0; j<size; j++){
+                        document.write(" "+board[i][j]+" "); }
+                        document.write("<br>");
+                    }
+                     document.write("<br>");
+                }
+
+                function isSafe(board, row, col){
+                    for(var i=0; i<col; i++){
+                        if (board[row][i] === 1) {
+                            return false;
+                        }
+                    }
+ 
+                    for(var i=row, j=col; i>=0 && j>=0; i--, j--){
+                        if (board[i][j] === 1) {
+                            return false;
+                        }
+                    }
+  
+                    for(var i=row, j=col; j>=0 && i<size; i++, j--){
+                        if (board[i][j] === 1){
+                            return false;
+                        }
+                    }
+                    return true;
+                }
+
+                function reset(board, col){
+                    if(col===size){
+                        print(board);
+                        return;  
+                    }
+                    for(var i=0; i<size; i++){
+                        if(isSafe(board, i, col)){
+                            board[i][col]=1;
+                            reset(board, col+1);
+                            board[i][col]=0;
+                        }
+                    }
+                    return false;
+                }
+                function calculate(){
+                    var board = generate(size);
+                    reset(board, 0);
+                    }
+                    function generate(size){
+                        var board=[];
+                        for(var i=0; i<size; i++){
+                            board[i]=[];
+                            for(var j=0; j<size; j++){
+                                board[i][j]=0;
+                            }
+                        }
+                        return board;
+                    }
+        </script>
+    </body>
+</html>
