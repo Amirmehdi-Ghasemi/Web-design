@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'IRANYekan';
+    src: url('Fonts/IRANYekan-Thin.woff2') format('woff2'),
+        url('Fonts/IRANYekan-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'IRANYekan';
+    src: url('Fonts/IRANYekan-Light.woff2') format('woff2'),
+        url('Fonts/IRANYekan-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'IRANYekan';
+    src: url('Fonts/IRANYekan.woff2') format('woff2'),
+        url('Fonts/IRANYekan.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'IRANYekan';
+    src: url('Fonts/IRANYekan-Medium.woff2') format('woff2'),
+        url('Fonts/IRANYekan-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'IRANYekan';
+    src: url('Fonts/IRANYekan-Bold.woff2') format('woff2'),
+        url('Fonts/IRANYekan-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'IRANYekan';
+    src: url('Fonts/IRANYekan-Black.woff2') format('woff2'),
+        url('Fonts/IRANYekan-Black.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'IRANYekan ExtraBlack';
+    src: url('Fonts/IRANYekan-ExtraBlack.woff2') format('woff2'),
+        url('Fonts/IRANYekan-ExtraBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    font-family: "IRANYekan";
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+  }
+body{
+    direction: rtl;
+}
+
+.container{
+    max-width: 1300px;
+    margin:auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.navbar, .row{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+nav a{
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: 400;
+    color: #000000;
+}
+#time{
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.products h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+}
+.card {
+    color: #000000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    margin: 10px 20px 40px 0;
+    text-align: center;
+    float: right;
+    width: 25%;
+    padding: 10px;
+}
+.card h1{
+    font-size: 22px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.price {
+    margin: 20px 0px 10px 0;
+    color: #7c7c7c;
+    font-size: 18px;
+}
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: #ffffff;
+    font-weight: 500;
+    background-color: #000000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+.card button:hover {
+    opacity: 0.6;
+}
+.card img{
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    padding: 25px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.card img:hover, .cart:hover{
+    transition: transform 0.2s;
+    transform: scale(1.25);
+    cursor: pointer;
+}
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+.row{
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    background: #1b1920;
+    width: 100%;
+    height: 50%;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+.footer-column{
+  display: flex;
+  flex-direction: column;
+  padding: 15px 50px 25px 50px;
+}
+.footer-column h2{
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight:700;
+}
+.footer-column a{
+    font-size: 14px;
+  color: #ffffff;
+  font-weight: 400;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+a:hover {
+    color: #1472CF;
+    transition: 0.5 ease-out;
+    cursor: pointer;
+}
+
+.information{
+    text-align: center;
+        max-width: 1300px;
+        margin:auto;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-top: 50px;
+        margin-bottom: 100px;
+}
+.information h2{
+font-size: 32px;
+font-weight: 600;
+margin-bottom: 30px;
+}
+.information p{
+    font-size: 18px;
+    font-weight: 400;
+}
